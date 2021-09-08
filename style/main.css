@@ -3,6 +3,8 @@
     --preto: #141414;
 }
 
+/* elementos base */
+
 *{
     margin: 0;
     padding: 0;
@@ -12,6 +14,7 @@
 body{
     background: var(--preto);
     font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 
 header .container{
@@ -24,7 +27,6 @@ header .logo{
     color: var(--vermelho);
     font-family: 'Arial Black', 'Times New Roman', Times, serif;
     font-size: 40px;
-    margin-left: 5px;
 }
 
 header nav a{
@@ -35,4 +37,59 @@ header nav a{
 
 header nav a:hover{
     color: #fff;
+}
+
+/* filme principal */ 
+
+.filme-principal{
+    font-size: 15px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,.50)100%), url('/tela-netflix/img/harry-potter/pedra-filosofal.png');
+    
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.botao{
+    background-color:rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 13px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: var(--preto);
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+.container{
+    margin-left: 15px;
+}
+
+.filme-principal .container{
+    width: 80%;
 }
